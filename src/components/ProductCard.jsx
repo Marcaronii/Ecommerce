@@ -13,16 +13,12 @@ export default function ProductCard({ product }) {
       </div>
       <div className="product-info">
         <div className="product-category">{product.category}</div>
-        <h3 className="product-name truncate">
-          {product.name}
-        </h3>
+        <h3 className="product-name truncate">{product.name}</h3>
         <p className="product-description line-clamp-2">
           {product.description}
         </p>
         <div className="product-footer">
-          <span className="product-price">
-            ₱{formatPrice(product.price)}
-          </span>
+          <span className="product-price">₱{formatPrice(product.price)}</span>
           <Link
             to={`/product/${product.id}`}
             className="coral-button product-button"
